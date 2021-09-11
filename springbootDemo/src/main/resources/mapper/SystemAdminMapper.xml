@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.crmeb.springbootdemo.dao.SystemAdminDao">
+    <select id="getAllTest" resultType="com.crmeb.springbootdemo.model.SystemAdmin">
+        select * from eb_system_admin where id = 1
+    </select>
+</mapper>
