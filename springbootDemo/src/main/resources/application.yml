@@ -8,9 +8,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://121.196.17.222:3306/crmeb_java_os?characterEncoding=utf-8&useSSL=false&serverTimeZone=GMT+8
-    username: crmeb_java_os
-    password: ZpJ587J2yz2red8s
+    url: jdbc:mysql://121.196.17.222:3306/database?characterEncoding=utf-8&useSSL=false&serverTimeZone=GMT+8
+    username: root
+    password: password
 
 
 # swagger 配置
