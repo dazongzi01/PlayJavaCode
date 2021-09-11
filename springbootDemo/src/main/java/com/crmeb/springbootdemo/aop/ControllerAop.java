@@ -1,14 +1,11 @@
 package com.crmeb.springbootdemo.aop;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.databind.util.JSONPObject;
-import org.apache.tomcat.util.json.JSONParser;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.*;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
-
-import java.awt.*;
 
 /**
  * @program: springboot-demo
@@ -25,11 +22,6 @@ public class ControllerAop{
     public void webMethods(){
 
     }
-
-//    @Around("webMethods()")
-//    public Object doAround(ProceedingJoinPoint proceedingJoinPoint){
-//        return proceedingJoinPoint;
-//    }
 
     @Before("webMethods()")
     private void visitBefore(JoinPoint joinPoint){

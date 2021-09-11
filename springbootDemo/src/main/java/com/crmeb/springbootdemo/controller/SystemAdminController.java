@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * @program: springboot-demo
  * @author: 大粽子
@@ -29,6 +31,13 @@ public class SystemAdminController {
         BeanUtils.copyProperties(adminAddRequest, systemAdmin);
         boolean afterSave = systemAdminService.save(systemAdmin);
         return afterSave;
+    }
+
+    @ApiOperation("管理员列表")
+    @RequestMapping(value = "/list",method = RequestMethod.GET)
+    public List<SystemAdmin> list(){
+        List<SystemAdmin> list = systemAdminService.list();
+        return list;
     }
 
 

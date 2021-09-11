@@ -62,4 +62,5 @@ public class SystemAdmin implements Serializable {
 
     @ApiModelProperty(value = "是否接收短信")
     private Boolean isSms;
+
 }
