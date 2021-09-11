@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+springbootDemo/src/main/java/com/crmeb/springbootdemo/response/
+springbootDemo/src/main/resources/static/
+springbootDemo/src/main/resources/templates/
