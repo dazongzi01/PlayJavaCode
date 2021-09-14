@@ -60,4 +60,5 @@ private String time;
 
 ## 怎么样，在业务中使用简单吧！
 
-项目地址
+gitHub https://github.com/stivepeimm/PlayJavaCode
+gitee https://gitee.com/stivepeim/PlayJavaCode
