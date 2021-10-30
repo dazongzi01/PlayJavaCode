@@ -10,13 +10,13 @@ import org.springframework.context.annotation.Configuration;
 @SpringBootApplication
 @Configuration
 @MapperScan(basePackages = {"com.crmeb.*.dao","com.crmeb.*.*.dao"})
-public class SpringbootDemoApplication {
-//public class SpringbootDemoApplication extends SpringBootServletInitializer {
+//public class SpringbootDemoApplication {
+public class SpringbootDemoApplication extends SpringBootServletInitializer {
 
-//    @Override
-//    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-//        return builder.sources(SpringbootDemoApplication.class);
-//    }
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(SpringbootDemoApplication.class);
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(SpringbootDemoApplication.class, args);
