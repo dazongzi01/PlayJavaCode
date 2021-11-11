@@ -9,8 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <parent>
-        <groupId>com.crmeb</groupId>
-        <artifactId>springboot-demo</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>com.base.depend</groupId>
+        <artifactId>BaseDependencys</artifactId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 </project>
