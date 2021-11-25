@@ -3,13 +3,13 @@ package com.crmeb.springbootdemo;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @SpringBootApplication
 @Configuration
 @MapperScan(basePackages = {"com.crmeb.*.dao","com.crmeb.*.*.dao"})
+@ComponentScan(basePackages = {"com.crmeb"})
 public class SpringbootDemoApplication {
 //public class SpringbootDemoApplication extends SpringBootServletInitializer {
 

@@ -24,7 +24,8 @@ public class MySelfYmlConfig {
         PropertySourcesPlaceholderConfigurer pspc = new PropertySourcesPlaceholderConfigurer();
         YamlPropertiesFactoryBean yaml = new YamlPropertiesFactoryBean();
         yaml.setResources(new ClassPathResource[]{
-                new ClassPathResource("application-dev.yml")
+                new ClassPathResource("application-dev.yml"),
+                new ClassPathResource("application.yml")
         });
         pspc.setProperties(yaml.getObject());
         return pspc;
