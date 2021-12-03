@@ -108,6 +108,7 @@ public class ylyUtil {
      *      * @param content 打印内容(需要urlencode)，排版指令详见打印机指令
      *      * @param origin_id 商户系统内部订单号，要求32个字符内，只能是数字、大小写字母 ，且在同一个client_id下唯一。详见商户订单号
      *   String printContent = "一段美好的文字";
+     *   模版 http://dev.10ss.net/printtemplate###
      * @throws Exception
      */
     public void ylyPrint(YlyPrintRequest ylyPrintRequest) throws Exception {
@@ -190,14 +191,7 @@ public class ylyUtil {
 //        ylyUtil.ylyCancelAll();
 
 
-        // TODO 刷新token
+        // 刷新token 自行根据业务实现
         //RequestMethod.getInstance().getRefreshAccessToken(ylyAccessToken);
-
-
-
-
-
-
-
     }
 }
