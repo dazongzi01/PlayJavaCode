@@ -25,6 +25,23 @@
     </properties>
 
 
+    <dependencies>
+        <!--    加密-->
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk16</artifactId>
+            <version>1.46</version>
+        </dependency>
+        <!-- 易联云 打印 -->
+        <dependency>
+            <groupId>com.yly.java.yly_sdk</groupId>
+            <artifactId>yly</artifactId>
+            <scope>system</scope>
+            <version>1.0.0</version>
+            <systemPath>${basedir}/src/main/resources/libs/yly_sdk-1.5.jar</systemPath>
+        </dependency>
+    </dependencies>
+
     <build>
         <finalName>springboot-demo</finalName>
         <plugins>
